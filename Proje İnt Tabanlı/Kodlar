@@ -227,6 +227,72 @@ h1 {
   width: 300px;
   height: 200px;
 }
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
 
     </style>
 </head>
@@ -306,12 +372,48 @@ h1 {
             
         }
     </script>
+    <!-- Üye Girişi Formu -->
+<form id="loginForm">
+  <h2>Üye Girişi</h2>
+  <input type="email" placeholder="E-posta adresi" required>
+  <input type="password" placeholder="Şifre" required>
+  <button type="submit">Giriş Yap</button>
+</form>
+
+<!-- Kayıt Formu -->
+<form id="registerForm">
+  <h2>Kayıt Ol</h2>
+  <input type="text" placeholder="Ad" required>
+  <input type="text" placeholder="Soyad" required>
+  <input type="email" placeholder="E-posta adresi" required>
+  <input type="password" placeholder="Şifre" required>
+  <button type="submit">Kayıt Ol</button>
+</form>
+<div class="yardim-malzemesi" data-category="gida">
+  
+  <h3>Gıda Yardımı</h3>
+  <p>Gıda paketleri ve temel gıda malzemeleri</p>
+  <p>Stok Sayısı: <span class="stok-sayisi">10</span></p>
+</div>
+
+<div class="yardim-malzemesi" data-category="giysi">
+  
+  <h3>Giysi Yardımı</h3>
+  <p>Giyim eşyaları ve tekstil ürünleri</p>
+  <p>Stok Sayısı: <span class="stok-sayisi">5</span></p>
+</div>
+
+<div class="yardim-malzemesi" data-category="temizlik">
+  <h3>Temizlik Malzemeleri Yardımı</h3>
+  <p>Temizlik ürünleri ve hijyen malzemeleri</p>
+  <p>Stok Sayısı: <span class="stok-sayisi">8</span></p>
+</div>
+<div class="tıbbi-yardım" data-category="tıbbi-yardım">
+  <h3>Tıbbi Yardım Ürünleri</h3>
+  <p>İlk yardım kiti ve Antibiyotik</p>
+  <p>Stok Sayısı: <span class="stok-sayisi">11</span></p>
+</div>
+
     
-    <img src="resim_1.webp" alt="Deprem Yardımı" class="resim1">
-    <img src="RESİM_2.webp" alt="Deprem Yardımı" class="resim2">
-    <img src="resim3.jpg" alt="Deprem Yardımı" class="resim3">
-    <img src="resim4.jpg" alt="Deprem Yardımı" class="resim4">
-    <img src="resim5.jpg" alt="Deprem Yardımı" class="resim5">
-    <img src="resim6.jpg" alt="Deprem Yardımı" class="resim6">
 </body>
 </html>
